@@ -1,0 +1,11 @@
+.order-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-form input {
+  width: 70%;
+  margin-bottom: 30px;
+}

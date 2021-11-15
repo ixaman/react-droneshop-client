@@ -1,0 +1,14 @@
+.add-package-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.add-package-form input {
+  width: 40%;
+  margin-top: 30px;
+}
+.add-package-form {
+  background-color: skyblue;
+  padding: 60px;
+}

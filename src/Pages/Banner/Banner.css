@@ -1,0 +1,24 @@
+.banner {
+  background-image: url("https://techcrunch.com/wp-content/uploads/2017/08/mavic-pro-banner-fe99d69c4d6937a11ac602a729058825.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 780px;
+  width: 100%;
+  /* border: 1px solid red; */
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.title {
+  color: goldenrod;
+  font-weight: bold;
+  font-size: 40px;
+}
+.about-btn {
+  background-color: goldenrod;
+  outline: none;
+  border: none;
+  padding: 10px 29px;
+  color: black;
+  border-radius: 10px;
+}
