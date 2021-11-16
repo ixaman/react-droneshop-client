@@ -20,9 +20,9 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route  path="/home" component={Home} />
-            <PrivateRoute path="/products">
+            <Route path="/products">
               <Products></Products>
-            </PrivateRoute>
+            </Route>
             <PrivateRoute path="/purchase/:p_id">
               <Purchase></Purchase>
             </PrivateRoute>
