@@ -116,11 +116,6 @@ const Navigation = () => {
                   </Typography>
                 )}
                 <Typography variant="h6" sx={{ mx: 4 }}>
-                  <Link className={navItem} to="/about">
-                    About
-                  </Link>
-                </Typography>
-                <Typography variant="h6" sx={{ mx: 4 }}>
                   <Link className={navItem} to="/products" sx={{ mx: 5 }}>
                     Products
                   </Link>
@@ -212,12 +207,6 @@ const Navigation = () => {
                         Products
                       </Link>
                     </ListItemText>
-                  </ListItem>
-                  <Divider />
-                  <ListItem button>
-                    <Link className={navItem} to="/about">
-                      About
-                    </Link>
                   </ListItem>
                   <Divider />
                   <ListItem button>

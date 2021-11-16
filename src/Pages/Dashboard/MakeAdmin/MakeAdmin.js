@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField";
 import React, { useState } from "react";
 
 const MakeAdmin = () => {
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState('');
   const [successStatus, setSuccessStatus] = useState(false);
 
   const handleOnBlur = (e) => {
@@ -12,7 +12,7 @@ const MakeAdmin = () => {
 
   const handleAdminSubmit = (e) => {
     const user = { email };
-    fetch("http://localhost:5000/users/admin", {
+    fetch("https://obscure-plains-97206.herokuapp.com/users/admin", {
       method: "PUT",
       headers: {
         "content-type": "application/json"

@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./Context/AuthProvider/AuthProvider";
-import About from "./Pages/About/About";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
@@ -21,7 +20,6 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route  path="/home" component={Home} />
-            <Route path="/about" component={About} />
             <PrivateRoute path="/products">
               <Products></Products>
             </PrivateRoute>

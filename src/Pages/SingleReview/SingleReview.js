@@ -1,21 +1,28 @@
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Card, CardContent, Grid, Rating, Typography } from "@mui/material";
 import React from "react";
-import './SingleReview.css';
+
+const element = <FontAwesomeIcon icon={faUser} size="lg" />
 
 const SingleReview = (props) => {
-    const {name,email,rating,remark} = props.review;
+  const { name, email, rating, remark } = props.review;
   return (
     <>
-      <div className="container card-cont">
-        <div class="card text-white bg-success  mb-3" style={{maxWidth: '18rem'}}>
-            <div class="card-header">{name}</div>
-            <div class="card-body">
-            <h5 class="card-title text-black">{rating} star</h5>
-            <p class="card-text">
-                {remark}
-            </p>
-            </div>
-        </div>
-      </div>
+      <Grid item xs={4} sm={4} md={4}>
+        <Card sx={{ minWidth: 275, border: 0, boxShadow: 5 }}>
+          {element}
+          <CardContent>
+            <Typography variant="h5" component="div">
+              {name}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {remark}
+            </Typography>
+            <Rating sx={{my:2}} name="read-only" value={rating} readOnly />
+          </CardContent>
+        </Card><br /> <br /><br />
+      </Grid>
     </>
   );
 };

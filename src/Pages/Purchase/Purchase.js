@@ -16,7 +16,7 @@ const Purchase = () => {
         data.status = "Pending";
         data.order = orderedProduct;
 
-        fetch('http://localhost:5000/order', {
+        fetch('https://obscure-plains-97206.herokuapp.com/order', {
             method: "POST",
             headers: {
                 "content-type": "application/json"
@@ -33,7 +33,7 @@ const Purchase = () => {
 
     };
 
-    const url = `http://localhost:5000/products/${p_id}`
+    const url = `https://obscure-plains-97206.herokuapp.com/products/${p_id}`
 
     useEffect( ()=> {
         fetch(url)

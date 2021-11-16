@@ -1,7 +1,7 @@
 import React from 'react';
 import useProducts from '../../hooks/useProducts';
-import Product from '../About/Product/Product';
 import Banner from '../Banner/Banner';
+import Product from '../Product/Product';
 import Reason from '../Reason/Reason';
 import ReviewSection from '../ReviewSection/ReviewSection';
 import './Home.css';

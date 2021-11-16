@@ -10,7 +10,7 @@ const MakeReviews = () => {
     
     const onSubmit = data => {
         console.log(data)
-        axios.post('http://localhost:5000/reviews', data)
+        axios.post('https://obscure-plains-97206.herokuapp.com/reviews', data)
         .then(res => {
             if(res.data.insertedId){
                 alert('Review given successfully !');
@@ -27,7 +27,7 @@ const MakeReviews = () => {
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <input defaultValue={user.displayName} {...register("name")} />
                     <input defaultValue={user.email} {...register("email")} />
-                    <input placeholder="Ratings" type="number" {...register("rating")} />
+                    <input placeholder="Ratings (0-5)" type="number" {...register("rating")} />
                     <input  placeholder="Remarks" {...register("remark")} />
                     <input className="btn btn-success" type="submit" />
                 </form>
