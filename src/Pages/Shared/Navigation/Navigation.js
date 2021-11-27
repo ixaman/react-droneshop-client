@@ -20,6 +20,7 @@ import useAuth from "../../../hooks/useAuth";
 
 const Navigation = () => {
   const { user, logOut } = useAuth();
+  console.log(user)
   const [state, setState] = React.useState(false);
 
   const theme = useTheme();
